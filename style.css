@@ -1,0 +1,225 @@
+body{
+    background-color: #E9ECF8;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+main{
+    padding:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.logo-container{
+    flex: 0.5;
+    height: 100%;
+}
+.logo{
+    width: 120px;
+    height: 48px;
+}
+.left-container{
+    flex: 3;
+    align-items: center;
+    justify-content:end;
+    vertical-align: baseline;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.alert{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 80px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.alert p{
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #495057;
+    opacity: 0.8;
+}
+.buttons{
+    padding: 16px 0 32px 0;
+}
+.encriptar{
+    background: #0A3871;
+    color: #E5E5E5;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.mensaje{
+    width: 100%;
+    height: 65%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+textarea{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #0A3871;
+    background-color: transparent;
+    border: none;
+    resize: none;
+}
+textarea::placeholder{
+    color: #0A3871;
+}
+textarea:focus{
+    border: none;
+}
+.right-container{
+    flex: 1;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    flex-direction: column;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+    box-sizing: border-box;
+}
+.no-text{
+    display: block;
+}
+.text{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:baseline;
+    vertical-align: baseline;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.result{
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    height: 90%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+}
+.copy{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.muñeco{
+    width: 100%;
+    padding:0 32px;
+    box-sizing: border-box;
+}
+.titulo{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    color: #343A40;
+    margin: 32px 32px 16px 32px;
+}
+.mensaje{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+@media screen and (max-width:720px) {
+    main{
+        flex-direction: column;
+        height: 100%;
+    }
+    .logo-container{
+        width: 100%;
+        padding-bottom: 20px;
+    }   
+    .left-container{
+        padding: 0;
+    } 
+    .mensaje{
+        padding:0;
+    }
+    .encriptar{
+        width: 300px;
+    }
+    .desencriptar{
+        width: 300px;
+    }
+    .copy{
+        width: 300px;
+    }
+    .muñeco{
+        display: none;
+    }
+    .right-container{
+        min-width: 100%;
+    }
+    .alert{
+        padding: 0 5px;
+    }
+    .result{
+        height: auto;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .encriptar{
+        margin-bottom: 24px;
+    }
+    .alert{
+        padding:0 5px;
+    }
+}
